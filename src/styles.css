@@ -1,3 +1,52 @@
-body {
-  background-color: #7FDBFF;
+body{
+  background-image: url("http://www.aiclakeforest.com/file/Seamless-Dark-Wood-Flooring-Texture.jpg");
+  color: white;
+  font-weight: 600;
+}
+
+#intro{
+  text-align: center;
+}
+#thankYou{
+  text-align: center;
+  font-weight: 600;
+  display:none;
+}
+
+.jumbotron {
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(168, 3, 3);
+  opacity: 85%;
+}
+
+#orderReveal{
+  width: 370px;
+  padding: 10px;
+  margin-left: 410px;
+  display:none;
+}
+
+#size {
+  width:250px;
+}
+
+#toppingsForm {
+  width: 370px;
+  padding: 10px;
+  font-weight: 600;
+  float:left;
+}
+
+#megaMeatPizza, #angusPizza, #angusBaconPizza {
+  width: 260px;
+  height: 160px;
+  margin: 5px;
+  float: left;
+  display:inline-block;
+}
+
+#angusEggPizza{
+  width: 340px;
+  height: 160px;
 }

@@ -1,15 +1,18 @@
-export function pingPong(goal) {
-  var output = [];
-  for (var i = 1; i <= goal; i++) {
-    if (i % 15 === 0) {
-      output.push("ping-pong");
-    } else if (i % 3 === 0) {
-      output.push("ping");
-    } else if (i % 5 === 0) {
-      output.push("pong");
-    } else  {
-      output.push(i);
-    }
+export var Pizza = function (topping, size) {
+  this.topping = topping;
+  this.size = size;
+  this.price = 0;
+};
+Pizza.prototype.getPrice = function() {
+  for(var i = 0; i < this.topping.length; i++){
+    this.price += 1;
   }
-  return output;
-}
+  if(this.size === "BigBoi"){
+    this.price += 20;
+  }
+  if(this.size === "SmallBoi"){
+    this.price += 10;
+  }
+  else
+    return this.price;
+};

@@ -1,9 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Template</title>
-  </head>
-  <body>
-    <p>Hey</p>
-  </body>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Portland Pizza Pop-Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Portland Pizza Pop-Up!</h1>
+    </div>
+    <div id="intro">
+      <p>Welcome to Portland's 9 millionth pizza pop up! We have some interesting specials for you to look at! We just have some photos of what to expect during this coming holiday season. I hope you like Angus Beef!</p>
+    </div>
+    <div id="thankYou">
+      <p>Thank you SO much for taking the time to order from us! We home to see you again soon!</p>
+    </div>
+    <form id="toppingsForm">
+      <div class="size">
+        <h5>What size do you want this bad boi?</h5>
+        <select class="form-control" id="size">
+          <option>Choose a size</option>
+          <option>BigBoi</option>
+          <option>SmallBoi</option>
+        </select>
+      </div>
+
+      <div class="toppingsChoice">
+        <h5>Meats</h5>
+        <input type="checkbox" name="topping" value="Sausage">  Sausage<br>
+        <input type="checkbox" name="topping" value="Bacon">   Bacon<br>
+        <input type="checkbox" name="topping" value="Pepperoni">  Pepperoni<br>
+        <h5>Sauces</h5>
+        <input type="checkbox" name="topping" value="Red Sauce"> Red Sauce<br>
+        <input type="checkbox" name="topping" value="White Sauce"> White Sauce<br>
+      </div>
+      <br>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <div id="specials">
+    <img src="images/jpizza5.png" alt="Every Meat and Angus" id="megaMeatPizza">
+    <img src="images/jpizza2.png" alt="Angus Beef Pizza" id="angusPizza">
+    <img src="images/jpizza4.png" alt="Angus Beef with Bacon Pizza" id="angusBaconPizza">
+    <img src="images/jpizza3.png" alt="Angus Beef with egg Pizza" id="angusEggPizza">
+    <img src="images/jpizza4.png" alt="Angus Beef with Bacon Pizza" id="angusBaconPizza">
+  </div>
+
+  <!-- Will be displayed after submission of order -->
+  <div id="orderReveal">
+    <h2>Your Order</h2>
+    <h5><strong>Size:</strong></h5>
+    <h6><span id="pizzaSize"></span></h6>
+    <h5><strong>Toppings:</strong></h5>
+    <h6><span id="userOrder"></span></h6>
+    <h3>Order total</h3>
+    <h6><span id="orderTotal"></span>.00$</h6>
+    <br>
+    <div id="newOrder">
+
+      <!-- pulled of stackOverFlow, refreshes the page to allow for new order creation -->
+      <a onClick="window.location.reload()"><h6><strong>Start New Order</strong></h6></a>
+    </div>
+  </div>
+</div>
+</body>
 </html>
